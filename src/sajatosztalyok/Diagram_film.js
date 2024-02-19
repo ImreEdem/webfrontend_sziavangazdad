@@ -15,8 +15,8 @@ const App = () => {
       const json = await response.json();
       setData(json);
       for (let elem of json){
-        dataCim.push(elem.film_cim)
-        dataDarabszam.push(elem.Szavazatok_szama) 
+        dataCim.push(elem.honap)
+        dataDarabszam.push(elem.orokbefogadasok) 
       }
 
 
@@ -39,9 +39,33 @@ const App = () => {
         data={[
           {type: 'bar', 
           x: dataCim, 
-          y: dataDarabszam},
+          y: dataDarabszam,
+          marker: {
+            color: 'blue', 
+            opacity: 0.8, 
+          },
+          line: {
+            width: 1, 
+            color: 'black', 
+            
+          }
+        },
+          
         ]}
-        layout={ {width: 1000, height: 880, title: 'Filémekre való szavazatok diagramja'} }
+        layout={{ 
+          width: 1000, 
+          height: 880, 
+          title: 'Havonta megtörtént örökbefogadások száma',
+          xaxis: {
+            title: 'Honapok',
+            
+          },
+          yaxis: {
+            title: 'Örökbefogadások száma',
+            
+          },
+        }}
+        
       />
         
         
