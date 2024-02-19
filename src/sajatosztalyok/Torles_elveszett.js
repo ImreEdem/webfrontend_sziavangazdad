@@ -63,7 +63,7 @@ const App = () => {
             </Text>
             </View>
             <View style={{flex:4, alignContent:'center', margin:10}}>
-            <Image source={{ uri: IP.Ipcim + item.elveszett_kep }} style={{ width: 300, height: 300, margin: 'auto', borderWidth: 4, borderColor: 'blue', borderRadius: 3 }} />
+            <Image source={{ uri: "http://nodejs2.dszcbaross.edu.hu:22004/kepek/"+item.elveszett_kep }} style={{ width: 300, height: 300, margin: 'auto', borderWidth: 4, borderColor: 'blue', borderRadius: 3 }} />
             </View>
             <View style={{flex:4, alignItems:'center', paddingTop:160, paddingBottom:160}}>
             <TouchableOpacity
