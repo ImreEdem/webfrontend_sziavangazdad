@@ -202,7 +202,7 @@ class App extends Component {
             <Route path="/Kozosscreen" component={Kozosscreen} />
             <Route path="/Diagram_film" component={Diagram_film} />
             <Route path="/Torles_elveszett" component={Torles_elveszett} />
-            <Route path="/Torles_allatok" component={Torles_elveszett} />
+            <Route path="/Torles_allatok" component={Torles_allatok} />
           </Switch>
         </div>
       </div>

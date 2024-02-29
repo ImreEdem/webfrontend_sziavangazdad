@@ -6,7 +6,7 @@ const App = () => {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
 
-  const letolt_elveszett = async () => {
+  const letolt_allatok = async () => {
     try {
       const response = await fetch(IP.Ipcim +'allatok');
       const json = await response.json();
@@ -19,7 +19,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    letolt_elveszett();
+    letolt_allatok();
   }, []);
 
   const torles = (szam) => {
@@ -38,7 +38,7 @@ const App = () => {
         .then((x) => x.text())
         .then((y) => {
           alert(y);
-          letolt_elveszett();
+          letolt_allatok();
         });
     }
   };
