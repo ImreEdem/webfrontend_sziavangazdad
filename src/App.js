@@ -22,7 +22,7 @@ import ProbaAdmin from './sajatosztalyok/ProbaAdmin'
 import Kozosscreen from './sajatosztalyok/Kozosscreen'
 import Diagram_film from './sajatosztalyok/Diagram_film'
 import Torles_elveszett from './sajatosztalyok/Torles_elveszett'
-
+import Torles_allatok from './sajatosztalyok/Torles_allatok'
 
 class App extends Component {
   constructor(props) {
@@ -120,6 +120,13 @@ class App extends Component {
                 </Link>
               </li>
             )}
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/Torles_allatok"} className="nav-link">
+                  Örökbeadott állat törlése
+                </Link>
+              </li>
+            )}
 
 
             {currentUser && (
@@ -195,7 +202,7 @@ class App extends Component {
             <Route path="/Kozosscreen" component={Kozosscreen} />
             <Route path="/Diagram_film" component={Diagram_film} />
             <Route path="/Torles_elveszett" component={Torles_elveszett} />
-           
+            <Route path="/Torles_allatok" component={Torles_elveszett} />
           </Switch>
         </div>
       </div>
