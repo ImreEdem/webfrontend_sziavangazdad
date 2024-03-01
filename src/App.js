@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -13,13 +13,13 @@ import BoardUser from "./components/board-user.component";
 import BoardModerator from "./components/board-moderator.component";
 
 
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 
-import Admin from './sajatosztalyok/Admin'
-import Kereses from "./sajatosztalyok/Kereses"
-import Proba from './sajatosztalyok/Proba'
-import ProbaAdmin from './sajatosztalyok/ProbaAdmin'
-import Kozosscreen from './sajatosztalyok/Kozosscreen'
+// import Admin from './sajatosztalyok/Admin'
+// import Kereses from "./sajatosztalyok/Kereses"
+// import Proba from './sajatosztalyok/Proba'
+// import ProbaAdmin from './sajatosztalyok/ProbaAdmin'
+// import Kozosscreen from './sajatosztalyok/Kozosscreen'
 import Diagram_film from './sajatosztalyok/Diagram_film'
 import Torles_elveszett from './sajatosztalyok/Torles_elveszett'
 import Torles_allatok from './sajatosztalyok/Torles_allatok'
@@ -61,11 +61,15 @@ class App extends Component {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-        <Link to={"/"} className="navbar-brand">
-            Záródoga
-          </Link>
-          <div className="navbar-nav mr-auto">
+        <Navbar.Brand as={Link} to="/">
+        <Image
+                  style={{width:250,height:150,margin:-15}}
+                  src='http://localhost:8080/Logo.png'
+                />
+                </Navbar.Brand>
+
+      <Nav className="mr-auto">
+               <div className="navbar-nav mr-auto">
             
             {/* <li className="nav-item">
               <Link to={"/Kereses"} className="nav-link">
