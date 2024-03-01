@@ -23,6 +23,7 @@ import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 import Diagram_film from './sajatosztalyok/Diagram_film'
 import Torles_elveszett from './sajatosztalyok/Torles_elveszett'
 import Torles_allatok from './sajatosztalyok/Torles_allatok'
+import { alignPropType } from "react-bootstrap/esm/types";
 
 class App extends Component {
   constructor(props) {
