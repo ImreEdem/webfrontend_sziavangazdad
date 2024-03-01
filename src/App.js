@@ -13,7 +13,7 @@ import BoardUser from "./components/board-user.component";
 import BoardModerator from "./components/board-moderator.component";
 
 
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 
 // import Admin from './sajatosztalyok/Admin'
 // import Kereses from "./sajatosztalyok/Kereses"
