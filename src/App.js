@@ -15,11 +15,11 @@ import BoardModerator from "./components/board-moderator.component";
 
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-import Admin from './sajatosztalyok/Admin'
-import Kereses from "./sajatosztalyok/Kereses"
-import Proba from './sajatosztalyok/Proba'
-import ProbaAdmin from './sajatosztalyok/ProbaAdmin'
-import Kozosscreen from './sajatosztalyok/Kozosscreen'
+// import Admin from './sajatosztalyok/Admin'
+// import Kereses from "./sajatosztalyok/Kereses"
+// import Proba from './sajatosztalyok/Proba'
+// import ProbaAdmin from './sajatosztalyok/ProbaAdmin'
+// import Kozosscreen from './sajatosztalyok/Kozosscreen'
 import Diagram_film from './sajatosztalyok/Diagram_film'
 import Torles_elveszett from './sajatosztalyok/Torles_elveszett'
 import Torles_allatok from './sajatosztalyok/Torles_allatok'
