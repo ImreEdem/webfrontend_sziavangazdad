@@ -63,7 +63,9 @@ class App extends Component {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
         <Link to={"/"} className="navbar-brand">
-            Záródoga
+            <div>
+
+            </div>
           </Link>
           <div className="navbar-nav mr-auto">
             
@@ -108,7 +110,7 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/Diagram_film"} className="nav-link">
-                  Diagram film
+                  Adatok diagramban megjelenítve
                 </Link>
               </li>
             )}
