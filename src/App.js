@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Link} from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -13,7 +13,7 @@ import BoardUser from "./components/board-user.component";
 import BoardModerator from "./components/board-moderator.component";
 
 
-import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 // import Admin from './sajatosztalyok/Admin'
 // import Kereses from "./sajatosztalyok/Kereses"
@@ -68,7 +68,6 @@ class App extends Component {
                 />
                 </Navbar.Brand>
 
-
       <Nav className="mr-auto">
                <div className="navbar-nav mr-auto">
             
@@ -113,7 +112,7 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/Diagram_film"} className="nav-link">
-                  Diagram film
+                  Adatok diagramban megjelenítve
                 </Link>
               </li>
             )}
