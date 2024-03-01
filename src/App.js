@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Image } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -63,7 +63,10 @@ class App extends Component {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
         <Link to={"/"} className="navbar-brand">
-            Záródoga
+        <Image
+                  style={{width:250, height:150}}
+                  source={{ uri: `http://nodejs2.dszcbaross.edu.hu:22004/kepek/Logo.png` }}
+                />
           </Link>
           <div className="navbar-nav mr-auto">
  
