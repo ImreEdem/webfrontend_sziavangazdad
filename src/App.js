@@ -66,44 +66,44 @@ class App extends Component {
             Záródoga
           </Link>
           <div className="navbar-nav mr-auto">
- 
-            <li className="nav-item">
+            
+            {/* <li className="nav-item">
               <Link to={"/Kereses"} className="nav-link">
                 Keresés
               </Link>
-            </li>
-                     
+            </li> */}
+                    
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to={"/Proba"} className="nav-link">
                 Próba
               </Link>
-            </li>
+            </li> */}
 
-            {showModeratorBoard && (
+            {/* {showModeratorBoard && (
               <li className="nav-item">
                 <Link to={"/mod"} className="nav-link">
                   Moderator
                 </Link>
               </li>
-            )}
+            )} */}
 
 
-            {showAdminBoard && (
+            {/* {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/Admin"} className="nav-link">
                   Admin
                 </Link>
               </li>
-            )}
+            )} */}
 
-            {showAdminBoard && (
+            {/* {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/ProbaAdmin"} className="nav-link">
                   PróbaAdmin
                 </Link>
               </li>
-            )}
+            )} */}
 
             {showAdminBoard && (
               <li className="nav-item">
@@ -129,17 +129,17 @@ class App extends Component {
             )}
 
 
-            {currentUser && (
+            {/* {currentUser && (
               <li className="nav-item">
                 <Link to={"/user"} className="nav-link">
                   User
                 </Link>
               </li>
-            )}
+            )} */}
           </div>
         
          
-          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+          {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
             <NavDropdown.Item href="/Kozosscreen">Települések kiírása</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action
@@ -149,7 +149,7 @@ class App extends Component {
             <NavDropdown.Item href="#action/3.4">
               Separated link
             </NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
         </Nav>
         <Nav>
         {currentUser ? (
@@ -173,11 +173,11 @@ class App extends Component {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to={"/register"} className="nav-link">
                   Sign Up
                 </Link>
-              </li>
+              </li> */}
             </div>
           )}
           
@@ -195,11 +195,11 @@ class App extends Component {
             <Route path="/user" component={BoardUser} />
             <Route path="/mod" component={BoardModerator} />
            
-            <Route path="/Admin" component={Admin} />
+            {/* <Route path="/Admin" component={Admin} />
             <Route path="/Kereses" component={Kereses} />
             <Route path="/Proba" component={Proba} />
             <Route path="/ProbaAdmin" component={ProbaAdmin} />
-            <Route path="/Kozosscreen" component={Kozosscreen} />
+            <Route path="/Kozosscreen" component={Kozosscreen} /> */}
             <Route path="/Diagram_film" component={Diagram_film} />
             <Route path="/Torles_elveszett" component={Torles_elveszett} />
             <Route path="/Torles_allatok" component={Torles_allatok} />
