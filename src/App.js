@@ -68,6 +68,7 @@ class App extends Component {
                 />
                 </Navbar.Brand>
 
+
       <Nav className="mr-auto">
                <div className="navbar-nav mr-auto">
             
