@@ -20,7 +20,7 @@ import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 // import Proba from './sajatosztalyok/Proba'
 // import ProbaAdmin from './sajatosztalyok/ProbaAdmin'
 // import Kozosscreen from './sajatosztalyok/Kozosscreen'
-import Diagram_film from './sajatosztalyok/Diagram_film'
+import Diagram_film from './sajatosztalyok/Diagramok'
 import Torles_elveszett from './sajatosztalyok/Torles_elveszett'
 import Torles_allatok from './sajatosztalyok/Torles_allatok'
 import { alignPropType } from "react-bootstrap/esm/types";
@@ -72,44 +72,7 @@ class App extends Component {
       <Nav className="mr-auto">
                <div className="navbar-nav mr-auto">
             
-            {/* <li className="nav-item">
-              <Link to={"/Kereses"} className="nav-link">
-                Keresés
-              </Link>
-            </li> */}
-                    
-
-            {/* <li className="nav-item">
-              <Link to={"/Proba"} className="nav-link">
-                Próba
-              </Link>
-            </li> */}
-
-            {/* {showModeratorBoard && (
-              <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
-                  Moderator
-                </Link>
-              </li>
-            )} */}
-
-
-            {/* {showAdminBoard && (
-              <li className="nav-item">
-                <Link to={"/Admin"} className="nav-link">
-                  Admin
-                </Link>
-              </li>
-            )} */}
-
-            {/* {showAdminBoard && (
-              <li className="nav-item">
-                <Link to={"/ProbaAdmin"} className="nav-link">
-                  PróbaAdmin
-                </Link>
-              </li>
-            )} */}
-
+          
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/Diagram_film"} className="nav-link">
@@ -118,7 +81,7 @@ class App extends Component {
               </li>
             )}
 
-            {showAdminBoard && (
+            {/* {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/Torles_elveszett"} className="nav-link">
                   Elveszett álatt törlése
@@ -131,30 +94,20 @@ class App extends Component {
                   Örökbeadott állat törlése
                 </Link>
               </li>
-            )}
-
-
-            {/* {currentUser && (
-              <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
-                  User
-                </Link>
-              </li>
             )} */}
+
+
+            
           </div>
         
          
-          {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="/Kozosscreen">Települések kiírása</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
+         <NavDropdown title="Törlések" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="/Torles_elveszett">
+              Elveszett állatok
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Item href="/Torles_allatok">Örökbefogadott állatok</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown> */}
+          </NavDropdown> 
         </Nav>
         <Nav>
         {currentUser ? (
